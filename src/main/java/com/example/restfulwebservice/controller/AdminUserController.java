@@ -27,7 +27,7 @@ public class AdminUserController {
     List<User> users = service.findAll();
 
     SimpleBeanPropertyFilter filter = SimpleBeanPropertyFilter
-      .filterOutAllExcept("id", "name", "joinDate", "password");
+      .filterOutAllExcept("id", "name", "joinDate", "ssn");
 
     FilterProvider filters = new SimpleFilterProvider().addFilter("UserInfo", filter);
 
